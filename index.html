@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Student Result Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Student Result Management System</h1>
+
+    <div class="form">
+
+        <h2>Enter Student Details</h2>
+
+        <label>Student Name:</label>
+        <input type="text" id="name">
+
+        <label>Registration Number:</label>
+        <input type="text" id="regno">
+
+        <h3>Enter Marks (Out of 50)</h3>
+
+        <label>Maths for Data Science:</label>
+        <input type="number" id="maths" min="0" max="50">
+
+        <label>OOP Java:</label>
+        <input type="number" id="java" min="0" max="50">
+
+        <label>Operating Systems:</label>
+        <input type="number" id="os" min="0" max="50">
+
+        <label>AI & Machine Learning:</label>
+        <input type="number" id="aiml" min="0" max="50">
+
+        <label>Enterprise IoT:</label>
+        <input type="number" id="eiot" min="0" max="50">
+
+        <br><br>
+
+        <button onclick="addStudent()">Add Student</button>
+
+        <button onclick="clearForm()">Clear Form</button>
+
+    </div>
+
+
+    <h2>Student Results</h2>
+
+    <table>
+
+        <tr>
+            <th>Reg No</th>
+            <th>Name</th>
+            <th>Maths DS</th>
+            <th>OOP Java</th>
+            <th>OS</th>
+            <th>AIML</th>
+            <th>EIOT</th>
+            <th>Total</th>
+            <th>Percentage</th>
+            <th>Grade</th>
+            <th>Status</th>
+        </tr>
+
+        <tbody id="studentTable">
+
+        </tbody>
+
+    </table>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
